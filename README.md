@@ -311,7 +311,7 @@ HAVING
 
 ### Output
 
-![Duplicate-records-check](assets/images/4_duplicate_records_check)
+![Duplicate-records-check](assets/images/4_duplicate_records_check.png)
 
 
 
