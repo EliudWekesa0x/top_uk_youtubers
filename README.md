@@ -100,7 +100,10 @@ Some of the data visuals that may be appropriate in answering our questions incl
   3. Scorecards
   4. Horizontal bar chart
 
-
+<p align="center">
+  <img src="https://github.com/EliudWekesa0x/top_uk_youtubers/blob/main/assets/images/dashboard_mockup.png"
+alt= "Kaggle to Power BI Demo">
+<p>
 
 
 
