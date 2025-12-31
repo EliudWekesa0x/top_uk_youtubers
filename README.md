@@ -239,7 +239,7 @@ FROM
 
 ### SQL Query
 
-```
+```sql
 /*
 # Count the Total number of columns (fields) in the SQL view
 */
@@ -261,7 +261,7 @@ WHERE
 
 ### SQL Query
 
-```
+```sql
 /*
 # Check the data types of each column from the view by checking the INFORMATION SCHEMA view
 */
@@ -327,7 +327,7 @@ This shows the Top UK YouTubers in 2024 so far.
 
 1. Total Subscribers(M)
 
-```DAX
+```dax
 Total Subscribers (M) = 
 VAR million = 1000000
 VAR sumOfSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
@@ -339,7 +339,7 @@ RETURN totalSubscribers
 
 2. Total Views(B)
 
-```DAX
+```dax
 Total Views (B) = 
 VAR billion = 1000000000
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
@@ -351,7 +351,7 @@ RETURN totalViews
 
 3. Total Videos
 
-```DAX
+```dax
 Total Videos = 
 VAR totalVideos = SUM(view_uk_youtubers_2024[total_videos])
 
@@ -361,7 +361,7 @@ RETURN totalVideos
 
 4. Average Views per Video(M)
 
-```DAX
+```dax
 Average Views per Video (M) = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
@@ -374,7 +374,7 @@ RETURN finalAvgViewsPerVideo
 
 5. Subscriber Engagement Rates
 
-```DAX
+```dax
 Subscriber Engagement Rate = 
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
 VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
@@ -386,7 +386,7 @@ RETURN subscriberEngRate
 
 6. Views per Subscriber
 
-```DAX
+```dax
 Views Per Subscriber = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
