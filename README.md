@@ -386,13 +386,46 @@ RETURN subscriberEngRate
 
 6. Views per Subscriber
 
-```sql
+```dax
 Views Per Subscriber = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
 VAR viewsPerSubscriber = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
 
 RETURN viewsPerSubscriber
+
+```
+
+7. Average Subscribers (all channels)
+
+```dax
+Avg Subscribers AC = 
+CALCULATE(
+    AVERAGE(view_uk_youtubers_2024[total_subscribers]),
+    ALL(view_uk_youtubers_2024)
+)
+
+```
+
+8. Average videos (all channels)
+
+```dax
+Avg Videos AC = 
+CALCULATE(
+    AVERAGE(view_uk_youtubers_2024[total_videos]), 
+    ALL(view_uk_youtubers_2024)
+)
+
+```
+
+9. Average views (all channels) 
+
+```dax
+Avg Views AC = 
+CALCULATE(
+    AVERAGE(view_uk_youtubers_2024[total_views]),
+    ALL(view_uk_youtubers_2024)
+)
 
 ```
 
