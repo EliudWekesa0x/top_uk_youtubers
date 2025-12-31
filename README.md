@@ -239,6 +239,43 @@ FROM
 
 ### SQL Query
 
+```
+/*
+# Count the Total number of columns (fields) in the SQL view
+*/
 
+SELECT
+    COUNT(*) AS column_count
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    TABLE_NAME = 'view_uk_youtubers_2024';
 
 ```
+
+### Output
+
+![Column-count-check](assets/images/2_column_count_check.png)
+
+## Data type check
+
+### SQL Query
+
+```
+/*
+# Check the data types of each column from the view by checking the INFORMATION SCHEMA view
+*/
+
+SELECT
+    COLUMN_NAME,
+    DATA_TYPE
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    TABLE_NAME = 'view_uk_youtubers_2024';
+
+```
+
+### Output
+
+![Data-type-check](assets/images/3_datatype_check)
