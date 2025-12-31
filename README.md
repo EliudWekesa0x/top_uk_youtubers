@@ -386,7 +386,7 @@ RETURN subscriberEngRate
 
 6. Views per Subscriber
 
-```dax
+```sql
 Views Per Subscriber = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
