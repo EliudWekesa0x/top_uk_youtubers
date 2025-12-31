@@ -315,4 +315,105 @@ HAVING
 
 
 
+# Visualization
+
+## Results
+
+- What does the dashboard look like?
+
+This shows the Top UK YouTubers in 2024 so far. 
+
+## Dax Measures
+
+1. Total Subscribers(M)
+
+```dax
+Total Subscribers (M) = 
+VAR million = 1000000
+VAR sumOfSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
+VAR totalSubscribers = DIVIDE(sumOfSubscribers,million)
+
+RETURN totalSubscribers
+
+```
+
+2. Total Views(B)
+
+```dax
+Total Views (B) = 
+VAR billion = 1000000000
+VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
+VAR totalViews = ROUND(sumOfTotalViews / billion, 2)
+
+RETURN totalViews
+
+```
+
+3. Total Videos
+
+```dax
+Total Videos = 
+VAR totalVideos = SUM(view_uk_youtubers_2024[total_videos])
+
+RETURN totalVideos
+
+```
+
+4. Average Views per Video(M)
+
+```dax
+Average Views per Video (M) = 
+VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
+VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
+VAR  avgViewsPerVideo = DIVIDE(sumOfTotalViews,sumOfTotalVideos, BLANK())
+VAR finalAvgViewsPerVideo = DIVIDE(avgViewsPerVideo, 1000000, BLANK())
+
+RETURN finalAvgViewsPerVideo
+
+```
+
+5. Subscriber Engagement Rates
+
+```dax
+Subscriber Engagement Rate = 
+VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
+VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
+VAR subscriberEngRate = DIVIDE(sumOfTotalSubscribers, sumOfTotalVideos, BLANK())
+
+RETURN subscriberEngRate
+
+```
+
+6. Views per Subscriber
+
+```dax
+Views Per Subscriber = 
+VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
+VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
+VAR viewsPerSubscriber = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
+
+RETURN viewsPerSubscriber
+
+```
+
+
+# Analysis
+
+## Findings
+
+- What we find?
+
+For this analysis, we're going to focus on the questions below to get the information we need for our marketing client
+
+Here are the key questions we need to answer for our marketing client:
+
+1. Who are the top 10 YouTubers with the most subscribers?
+2. Which 3 channels have uploaded the most videos?
+3. Which 3 channels have the most views?
+4. Which 3 channels have the highest average views per video?
+5. Which 3 channels have the highest views per subscriber ratio?
+6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+
+### 1. Who are the top 10 YouTubers with the most subscribers?
+
 
