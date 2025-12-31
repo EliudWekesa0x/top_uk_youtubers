@@ -327,7 +327,7 @@ This shows the Top UK YouTubers in 2024 so far.
 
 1. Total Subscribers(M)
 
-```dax
+```DAX
 Total Subscribers (M) = 
 VAR million = 1000000
 VAR sumOfSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
@@ -339,7 +339,7 @@ RETURN totalSubscribers
 
 2. Total Views(B)
 
-```dax
+```DAX
 Total Views (B) = 
 VAR billion = 1000000000
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
@@ -351,7 +351,7 @@ RETURN totalViews
 
 3. Total Videos
 
-```dax
+```DAX
 Total Videos = 
 VAR totalVideos = SUM(view_uk_youtubers_2024[total_videos])
 
@@ -361,7 +361,7 @@ RETURN totalVideos
 
 4. Average Views per Video(M)
 
-```dax
+```DAX
 Average Views per Video (M) = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
@@ -374,7 +374,7 @@ RETURN finalAvgViewsPerVideo
 
 5. Subscriber Engagement Rates
 
-```dax
+```DAX
 Subscriber Engagement Rate = 
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
 VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
@@ -386,7 +386,7 @@ RETURN subscriberEngRate
 
 6. Views per Subscriber
 
-```dax
+```DAX
 Views Per Subscriber = 
 VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
 VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
