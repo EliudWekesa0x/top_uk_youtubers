@@ -215,3 +215,5 @@ FROM
 
 # Testing
 
+- What data quality and validation checks are you going to create?
+Here are the data quality tests conducted:
