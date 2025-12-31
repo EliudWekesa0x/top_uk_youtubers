@@ -49,3 +49,19 @@ To create a dashboard that provides insights into the top UK YouTubers in 2024 t
 This will help the marketing team make informed decisions about which YouTubers to collaborate with for their marketing campaigns.
 
 # User Story
+As the Head of Marketing, I want to use a dashboard that analyses YouTube channel data in the UK .
+
+This dashboard should allow me to identify the top performing channels based on metrics like subscriber base and average views.
+
+With this information, I can make more informed decisions about which Youtubers are right to collaborate with, and therefore maximize how effective each marketing campaign is.
+
+# Data Source
+  - What is needed to achieve our objective
+
+We need data on the top UK YouTubers in 2024 that includes their
+
+  - Channel names
+  - Total subscribers
+  - Total views
+  - Total videos uploaded
+  - Where is the data coming from? The data is sourced from Kaggle (an Excel extract), 
