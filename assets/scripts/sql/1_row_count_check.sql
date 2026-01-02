@@ -1,5 +1,3 @@
-```sql
-
 /*
 
 # 1. Row count check 
@@ -13,5 +11,3 @@ SELECT
 FROM
     view_uk_youtubers_2024
 ;
-
-```
