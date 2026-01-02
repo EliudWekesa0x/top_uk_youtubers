@@ -9,8 +9,8 @@
 
 -- 1.
 DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
-DECLARE @productCost FLOAT = 5.0;               -- The product cost @ $5
-DECLARE @campaignCostPerVideo FLOAT = 5000.0;   -- The campaign cost per video @ $5,000
+DECLARE @productCost FLOAT = 5.0;               -- The product cost @ $5 (USD)
+DECLARE @campaignCostPerVideo FLOAT = 5000.0;   -- The campaign cost per video @ $5,000 (USD)
 DECLARE @numberOfVideos INT = 11;               -- The number of videos (11)
 
 
