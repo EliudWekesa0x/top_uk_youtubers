@@ -331,7 +331,7 @@ HAVING
 
 - What does the dashboard look like?
 
-![Power BI-dashboard-snippet](assets/images/top_uk_youtubers_2024.gif)
+
 
 This shows the Top UK YouTubers in 2024 so far. 
 
